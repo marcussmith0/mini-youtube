@@ -10,4 +10,6 @@ app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "index.html"));
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+    console.log(`serverlisteningon${PORT}`);
+});
